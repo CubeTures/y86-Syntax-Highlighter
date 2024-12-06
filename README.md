@@ -11,15 +11,17 @@ Syntax highlighting for the toy assembly language y86.
 -   Region folding
 -   Auto-indentation
 
-> [!IMPORTANT]
->
-> If you're a student (or not) and come across this extension, please contribute! To make this extension better for the next generation of students, we still want to create the following:
->
-> -   y86 Formatter
-> -   y86 Syntax Checker
-> -   y86 Single Click Run
->
-> Reach out to me, create an [issue](https://github.com/CubeTures/y86-Syntax-Highlighter/issues), or create a [pull request](https://github.com/CubeTures/y86-Syntax-Highlighter/pulls) on the [github page](https://github.com/CubeTures/y86-Syntax-Highlighter) if you'd like to help! Any and all help is appreciated, even if you just have ideas.
+![Example Code](https://github.com/CubeTures/y86-Syntax-Highlighter/raw/HEAD/images/CodeExample.png)
+
+# Contributing
+
+If you're a student (or not) and come across this extension, please contribute! To make this extension better for the next generation of students, we still want to create the following:
+
+-   y86 Formatter
+-   y86 Syntax Checker
+-   y86 Single Click Run
+
+Reach out to me, create an [issue](https://github.com/CubeTures/y86-Syntax-Highlighter/issues), or create a [pull request](https://github.com/CubeTures/y86-Syntax-Highlighter/pulls) on the [github page](https://github.com/CubeTures/y86-Syntax-Highlighter) if you'd like to help! Any and all help is appreciated, even if you just have ideas.
 
 ## Release Notes
 

@@ -10,9 +10,6 @@
 			"end": "^\\s*#\\s*endregion\\b"
 		}
 	},
-	"indentationRules": {
-	    "increaseIndentPattern": "^\\w+:",
-	},
 	"onEnterRules": [
         // indent after a label
         {
