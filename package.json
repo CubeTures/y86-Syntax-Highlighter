@@ -4,8 +4,12 @@
 	"displayName": "y86 Syntax Highlighter",
 	"description": "Syntax highlighting for the toy assembly language y86.",
 	"repository": {
+		"type": "github",
 		"url": "https://github.com/CubeTures/y86-Syntax-Highlighter/"
 	},
+	"license": "MIT",
+	"keywords": ["y86", "syntax highlighter", "x86", "asm", "assembly"],
+	"icon": "images/icon.png",
 	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.95.0"
@@ -19,7 +23,8 @@
 				"id": "y86",
 				"aliases": [
 					"y86",
-					"y86"
+					"ys",
+					"yo"
 				],
 				"extensions": [
 					"ys"
