@@ -1,0 +1,61 @@
+{
+	// symbols used as comments
+	"comments": {
+		"lineComment": "#"
+	},
+	// folding for #region
+	"folding": {
+		"markers": {
+			"start": "^\\s*#\\s*region\\b",
+			"end": "^\\s*#\\s*endregion\\b"
+		}
+	},
+	"indentationRules": {
+	    "increaseIndentPattern": "^\\w+:",
+	},
+	"onEnterRules": [
+        // indent after a label
+        {
+            "beforeText": "^\\w+",
+            "action": {
+                "indent": "indent"
+            }
+        },
+        // outdent after an empty line
+        {
+            "beforeText": "^\\s$",
+            "action": {
+                "indent": "outdent"
+            }
+        },
+        // outdent after halt or ret
+        {
+            "beforeText": "\\b(halt|ret)\\b",
+            "action": {
+                "indent": "outdent"
+            }
+        },
+	],
+	// symbols used as brackets
+	"brackets": [
+		["{", "}"],
+		["[", "]"],
+		["(", ")"]
+	],
+	// symbols that are auto closed when typing
+	"autoClosingPairs": [
+		["{", "}"],
+		["[", "]"],
+		["(", ")"],
+		["\"", "\""],
+		["'", "'"]
+	],
+	// symbols that can be used to surround a selection
+	"surroundingPairs": [
+		["{", "}"],
+		["[", "]"],
+		["(", ")"],
+		["\"", "\""],
+		["'", "'"]
+	]
+}

@@ -1,0 +1,88 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "y86",
+	"patterns": [
+		{
+			"include": "#statement"
+		}
+	],
+	"repository": {
+		"statement": {
+			"patterns": [
+				{
+					"include": "#command"
+				},
+				{
+					"include": "#comment"
+				},
+				{
+					"include": "#label"
+				},
+				{
+					"include": "#register"
+				},
+				{
+					"include": "#number"
+				},
+				{
+					"include": "#pos"
+				}
+			]
+		},
+		"command": {
+			"patterns": [
+				{
+					"include": "#control"
+				},
+				{
+					"include": "#operation"
+				}
+			]
+		},
+		"control": {
+			"name": "keyword.control",
+			"match": "\\b(halt|jmp|j(?:l|le|g|ge|e|ne)|call|ret)\\b"
+		},
+		"operation": {
+			"name": "keyword.operator",
+			"match": "\\b(nop|irmovq|rrmovq|rmmovq|mrmovq|addq|subq|andq|xorq|cmov(?:l|le|g|ge|e|ne)|pushq|popq)\\b"
+		},
+		"comment": {
+			"name": "comment.line",
+			"match": "#.*$"
+		},
+		"number": {
+			"patterns": [
+				{
+					"name": "constant.numeric",
+					"match": "\\$[0-9]+"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "\\$-[0-9]+"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "0x[0-9a-fA-F]+"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "\\b\\d+\\b"
+				}
+			]
+		},
+		"register": {
+			"name": "constant.language",
+			"match": "%r(?:ax|cx|dx|bx|sp|bp|si|di|8|9|10|11|12|13|14)"
+		},
+		"label": {
+			"name": "entity.name.function",
+			"match": "^\\w+:"
+		},
+		"pos": {
+			"name": "emphasis",
+			"match": "\\W\\.\\w+\\b"
+		}
+	},
+	"scopeName": "source.asm.y86"
+}

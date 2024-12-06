@@ -1,0 +1,26 @@
+{
+  "name": "y86-syntax-highlighter",
+  "publisher": "CubeTures",
+  "displayName": "y86 Syntax Highlighter",
+  "description": "Syntax highlighting for the toy assembly language y86.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "y86",
+      "aliases": ["y86", "y86"],
+      "extensions": ["ys"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "y86",
+      "scopeName": "source.asm.y86",
+      "path": "./syntaxes/y86.tmLanguage.json"
+    }]
+  }
+}
